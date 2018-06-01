@@ -1,17 +1,17 @@
 import React from 'react';
 import DrumPad from './DrumPad';
 
-const DrumPads = () => (
+const DrumPads = (props) => (
   <div id='drum-pads'>
-    <DrumPad keyTrigger={'Q'} />
-    <DrumPad keyTrigger={'W'} />
-    <DrumPad keyTrigger={'E'} />
-    <DrumPad keyTrigger={'A'} />
-    <DrumPad keyTrigger={'S'} />
-    <DrumPad keyTrigger={'D'} />
-    <DrumPad keyTrigger={'Z'} />
-    <DrumPad keyTrigger={'X'} />
-    <DrumPad keyTrigger={'C'} />
+    <DrumPad on={props.on} audio={props.pads[0]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[1]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[2]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[3]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[4]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[5]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[6]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[7]} volume={props.volume} />
+    <DrumPad on={props.on} audio={props.pads[8]} volume={props.volume} />
   </div>
 )
 
