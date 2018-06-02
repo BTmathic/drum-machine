@@ -48,7 +48,7 @@ export default class DrumMachine extends React.Component {
             </div>
           </div>
         </div>
-        <div id='audio-play-description'>
+        <div id='display'>
           {this.state.on && this.state.description}
         </div>
         <div id='drum-machine-contents'>

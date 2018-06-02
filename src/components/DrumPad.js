@@ -30,7 +30,7 @@ export default class DrumPad extends React.Component {
     return (
       <div className='drum-pad' id='audio-clip-description' onClick={() => { this.play(this.refs) }}>
         <audio className='clip'
-          id={this.props.keyTrigger}
+          id={this.props.audio.keyTrigger.toUpperCase()}
           src={this.props.audio.url}
           ref='audio'
         >
