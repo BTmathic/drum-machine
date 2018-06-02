@@ -6,6 +6,7 @@ export default class DrumPad extends React.Component {
     if (this.props.on) {
       this.refs.audio.volume = this.props.volume/100;
       this.refs.audio.play();
+      this.props.handleChangeDescription(this.props.audio.description);
     }
   }
 
@@ -35,7 +36,7 @@ export default class DrumPad extends React.Component {
         >
           Your browser does not support the audio element
         </audio>
-        {this.props.audio.keyTrigger.toUpperCase()}
+        <p>{this.props.audio.keyTrigger.toUpperCase()}</p>
       </div>
     );
   }
