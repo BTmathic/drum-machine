@@ -9,6 +9,6 @@ Plays 9 different sounds via button press or by pressing the appropiate keys on 
 
 ### Build Tools
 
-* Webpack
+* Parcel
 * Yarn
 * Babel
